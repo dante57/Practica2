@@ -1,0 +1,60 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: juancarlos
+ * Date: 28/02/2014
+ * Time: 11:22 a. m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+
+namespace Practica1
+{
+	class Program
+	{
+		
+		public static void Main(string[] args)
+		{
+		
+		Double Total;
+			
+			
+			Console.WriteLine("Dame 1er articulo: ");
+			Double Producto1= Double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Dame 2do articulo: ");
+			Double Producto2= Double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Dame 3er articulo: ");
+			Double Producto3= Double.Parse(Console.ReadLine());
+			
+			
+			Producto1= (Producto1 * .16) + Producto1;
+			
+			
+			
+			Console.WriteLine("Producto 1 mas el iva= "+Producto1);
+			
+			
+			Producto2= (Producto2 * .16) + Producto2;
+			
+			
+			Console.WriteLine("Producto 2 mas el iva= "+Producto2);
+			
+			
+			Producto3= (Producto3 * .16) + Producto3;
+			
+			
+			Console.WriteLine("Producto 3 mas el iva= "+Producto3);
+			
+			Total= Producto1 + Producto2 + Producto3;
+			
+			Console.WriteLine("Suma total de lo 3 productos: "+ Total);
+			
+			// TODO: Implement Functionality Here
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
